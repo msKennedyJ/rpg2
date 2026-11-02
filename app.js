@@ -84,7 +84,7 @@ const locations = {
     buttonText: ["Go to Shop", "Go to Cave", "Go to Castle", "Fight Boss"],
     buttonFunctions: [goShop, goCave, goCastle, fightWalker],
     text: "You are in the town square. What would you like to do?",
-    picture: "townSquare.png"
+    picture: "town.png"
   },
 
   shop: {
