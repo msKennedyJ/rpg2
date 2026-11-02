@@ -213,7 +213,7 @@ function buyWeapon() {
     gold -= 50;
     currentWeapon++;
 
-    goldText.innerText = gold;
+    updateStats();
 
     text.innerText = "You bought a " + weapons[currentWeapon].name + "!";
 
@@ -301,7 +301,7 @@ function attack() {
 
   // Update the screen.
 
-  healthText.innerText = health;
+  updateStats();
   monsterHealthText.innerText = monsterHealth;
 
   if (health <= 0) {
@@ -335,7 +335,7 @@ function block() {
   text.innerText = "You block the attack and only take " +
     reducedDamage + " damage!";
 
-  healthText.innerText = health;
+  updateStats();
 
   if (health <= 0) {
     lose();
