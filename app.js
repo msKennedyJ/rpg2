@@ -195,8 +195,7 @@ function buyHealth() {
     gold -= 10;
     health += 10;
 
-    goldText.innerText = gold;
-    healthText.innerText = health;
+    updateStats();
 
     text.innerText = "You bought 10 health!";
 
@@ -356,8 +355,7 @@ function defeatMonster() {
 
   gold += monster.level * 10;
 
-  xpText.innerText = xp;
-  goldText.innerText = gold;
+  updateStats();
 
   // The final monster wins the game.
 
@@ -396,9 +394,7 @@ function restart() {
   currentMonster = 0;
   monsterHealth = 0;
 
-  xpText.innerText = xp;
-  healthText.innerText = health;
-  goldText.innerText = gold;
+  updateStats();
 
   goTown();
 
