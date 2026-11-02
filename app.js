@@ -404,8 +404,17 @@ function restart() {
 
 }
 
+function updateStats() {
+  xpText.innerText = xp;
+  healthText.innerText = health;
+  goldText.innerText = gold;
+}
+
+
+
 // ==========================================
 // 16. START THE GAME
 // ==========================================
 
+updateStats();
 goTown();
