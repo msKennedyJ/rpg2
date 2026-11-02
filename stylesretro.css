@@ -1,1 +1,183 @@
 
+/* ==========================================
+   1. GENERAL STYLING
+========================================== */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 20px;
+  background-color: #20232a;
+  font-family: Arial, sans-serif;
+}
+
+/* ==========================================
+   2. MAIN GAME AREA
+========================================== */
+
+#game {
+  max-width: 650px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #e4e7eb;
+  color: #222;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+}
+
+/* ==========================================
+   3. PLAYER STATS
+========================================== */
+
+#stats {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 12px;
+  margin-bottom: 15px;
+  color: #222;
+  background-color: #d0d5dc;
+  border: 1px solid #b0b7c2;
+  border-radius: 8px;
+}
+
+.stat {
+  padding: 5px;
+  font-size: 15px;
+}
+
+.stat strong {
+  color: #172b55;
+  font-size: 17px;
+}
+
+/* ==========================================
+   4. GAME IMAGE
+========================================== */
+
+#content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+#content img {
+  display: block;
+  max-width: 100%;
+  max-height: 300px;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 8px;
+}
+
+/* ==========================================
+   5. BUTTONS
+========================================== */
+
+#controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 12px;
+  margin-bottom: 15px;
+  background-color: #d0d5dc;
+  border: 1px solid #b0b7c2;
+  border-radius: 8px;
+}
+
+button {
+  padding: 11px 16px;
+  cursor: pointer;
+  color: #222;
+  font-size: 14px;
+  font-weight: bold;
+  background: linear-gradient(to bottom, #ffe58a, #e5ad38);
+  border: 1px solid #c18b22;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: 0.2s ease;
+}
+
+button:hover {
+  background: linear-gradient(to bottom, #fff0b5, #f0c45d);
+  transform: translateY(-2px);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+/* ==========================================
+   6. MONSTER STATS
+========================================== */
+
+#monsterStats {
+  display: none;
+  padding: 12px;
+  margin-bottom: 15px;
+  color: white;
+  background-color: #9e3030;
+  border: 1px solid #7d2020;
+  border-radius: 8px;
+}
+
+#monsterStats .stat {
+  color: white;
+}
+
+#monsterStats .stat strong {
+  color: #ffe08a;
+}
+
+/* ==========================================
+   7. GAME TEXT
+========================================== */
+
+#text {
+  min-height: 80px;
+  padding: 18px;
+  color: #f0f0f0;
+  background-color: #172b55;
+  border-radius: 8px;
+  line-height: 1.6;
+  font-size: 15px;
+}
+
+/* ==========================================
+   8. MOBILE FRIENDLY
+========================================== */
+
+@media (max-width: 500px) {
+
+  body {
+    padding: 5px;
+  }
+
+  #game {
+    margin: 10px auto;
+    padding: 12px;
+  }
+
+  #stats {
+    justify-content: space-between;
+  }
+
+  button {
+    flex: 1 1 40%;
+    padding: 12px 8px;
+  }
+
+  #content img {
+    max-height: 230px;
+  }
+}
+
