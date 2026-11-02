@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="stylesplus.css">
+    <title>BM Teacher Battle</title>
+  </head>
+
+  <body>
+    <div id="game">
+      
+      <!-- Statistics -->
+      <div id="stats">
+        <span class="stat">XP: <strong><span id="xpText">0</span></strong></span>
+        <span class="stat">Health: <strong><span id="healthText">0</span></strong></span>
+        <span class="stat">Gold: <strong><span id="goldText">0</span></strong></span>
+      </div>
+
+      <!-- Game image -->
+      <div id="content">
+        <img id="img" src="start.png" class="center">
+      </div>
+
+      <!-- Buttons -->
+      <div id="controls">
+        <button id="button1">Go to Shop</button>
+        <button id="button2">Go to Castle</button>
+        <button id="button3">Go to Cave</button>
+        <button id="button4">Fight Boss</button>
+      </div>
+
+      <!-- Monster Information -->
+      <div id="monsterStats">
+        <span class="stat">Teacher Name: <strong><span id="monsterName"></span></strong></span>
+        <span class="stat">Health: <strong><span id="monsterHealth"></span></strong></span>
+      </div>
+      
+      <!-- Instructions and stuff -->
+      <div id="text">
+        Welcome to the BM Teacher Battle Arena! You are in the dining room.
+        Where do you want to go? Use the buttons above.
+      </div>
+
+    <script src="app.js"></script>
+    </div>
+  </body>
+
+</html>
