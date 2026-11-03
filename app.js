@@ -63,13 +63,13 @@ const monsters = [
   {
     name: "Toth",
     picture: "toth.png",
-    level: 24,
+    level: 50,
     health: 400
   },
   {
     name: "Walker",
     picture: "walker.png",
-    level: 50,
+    level: 100,
     health: 1000
   }
 ];
